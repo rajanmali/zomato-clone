@@ -23,7 +23,7 @@ const TabOptions = ({ activeTab, setActiveTab }) => {
                 alt={tab.name}
               />
             </div>
-            {tab.name}
+            <span className="tab-options__name">{tab.name}</span>
           </div>
         ))}
       </div>
