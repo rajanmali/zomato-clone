@@ -1,3 +1,4 @@
+// Components
 import Filter from '../common/Filter';
 
 const DiningOut = () => {

@@ -1,0 +1,25 @@
+.filter {
+  padding: 16px 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .filter__item {
+    padding: 8px;
+    margin: 10px 10px 10px 0px;
+
+    display: flex;
+
+    background-color: $bg-primary;
+    color: $zomato-gray-disabled;
+
+    border: 1px solid $zomato-gray-primary;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    .filter__name {
+      margin-left: 5px;
+    }
+  }
+}
