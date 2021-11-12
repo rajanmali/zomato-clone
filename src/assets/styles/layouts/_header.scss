@@ -1,0 +1,109 @@
+// ---------------------------------------------------------===
+// Header Component
+// ---------------------------------------------------------===
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  .header__logo {
+    cursor: pointer;
+
+    height: 27px;
+    max-width: 140px;
+    margin-right: 24px;
+  }
+
+  .header__inputs {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 72px;
+
+    .header__location-search-container {
+      height: 54px;
+      width: 70%;
+
+      display: flex;
+      align-items: center;
+
+      background-color: $primary-bg;
+      border: 1px solid $border-white;
+      border-radius: 8px;
+      box-shadow: $primary-box-shadow;
+
+      .header__location-wrapper {
+        cursor: pointer;
+
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
+        padding: 0px 10px;
+
+        .header__location-icon-name {
+          display: flex;
+          color: $zomato-gray-primary;
+
+          .header__location-icon {
+            color: $zomato-red;
+            font-size: 20px;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .header__inputs-separator {
+        height: 20px;
+        border: 0.5px solid $zomato-gray-secondary;
+      }
+
+      .header__search-wrapper {
+        display: flex;
+        flex: 2;
+
+        .header__search-icon {
+          font-size: 20px;
+          color: $zomato-gray-primary;
+          margin: 0px 12px;
+        }
+
+        .header__search-input {
+          border: none;
+          outline: none;
+
+          width: 80%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .header__profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 11%;
+
+    .header__profile-image {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .header__profile-name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .header__profile-dropdown-icon {
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}
