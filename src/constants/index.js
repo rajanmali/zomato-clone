@@ -27,3 +27,58 @@ export const navigationTab = [
       'https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png',
   },
 ];
+
+export const deliveryFilters = [
+  {
+    id: 1,
+    icon: <i className="fi fi-rr-settings-sliders absolute-center"></i>,
+    title: 'Filters',
+  },
+  {
+    id: 2,
+    title: 'Rating: 4.0+',
+  },
+  {
+    id: 3,
+    title: 'Safe and Hygienic',
+  },
+  {
+    id: 4,
+    title: 'Pure Veg',
+  },
+  {
+    id: 5,
+    title: 'Delivery Time',
+    icon: <i className="fi fi-rr-apps-sort absolute-center"></i>,
+  },
+  {
+    id: 6,
+    title: 'Great Offers',
+  },
+];
+
+export const nightLifeFilters = [
+  {
+    id: 1,
+    icon: <i className="fi fi-rr-settings-sliders absolute-center"></i>,
+    title: 'Filters',
+  },
+  {
+    id: 2,
+    title: 'Pro Offers',
+    icon: <i className="fi fi-rr-angle-down absolute-center"></i>,
+  },
+  {
+    id: 3,
+    title: 'Distance',
+    icon: <i className="fi fi-rr-apps-sort absolute-center"></i>,
+  },
+  {
+    id: 5,
+    title: 'Rating: 4.0+',
+  },
+  {
+    id: 4,
+    title: 'Pubs & Bars',
+  },
+];

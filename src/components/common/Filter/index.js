@@ -1,4 +1,4 @@
-const Filter = () => {
+const Filter = ({ filterList }) => {
   return <div>This is filter</div>;
 };
 
