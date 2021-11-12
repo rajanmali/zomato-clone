@@ -23,7 +23,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <TabOptions />
+      <TabOptions activeTab={activeTab} setActiveTab={setActiveTab} />
       {getCorrectScreen(activeTab)}
       <Footer />
     </>
