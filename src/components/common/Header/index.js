@@ -4,11 +4,11 @@ const Header = () => {
       <img
         src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
         alt="Zomato-logo"
-        className="header__logo"
+        className="header__logo cur-po"
       />
       <div className="header__inputs">
         <div className="header__location-search-container">
-          <div className="header__location-wrapper">
+          <div className="header__location-wrapper cur-po">
             <div className="header__location-icon-name">
               <i className="fi fi-rr-marker absolute-center header__location-icon" />
               <span className="header__location-name">Bangalore</span>
@@ -32,7 +32,7 @@ const Header = () => {
           className="header__profile-image"
         />
         <span className="header__profile-name">Rajan</span>
-        <i className="fi fi-rr-angle-small-down absolute-center header__profile-dropdown-icon" />
+        <i className="fi fi-rr-angle-small-down absolute-center header__profile-dropdown-icon cur-po" />
       </div>
     </header>
   );

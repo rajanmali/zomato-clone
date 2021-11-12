@@ -9,8 +9,6 @@
   margin-bottom: 12px;
 
   .header__logo {
-    cursor: pointer;
-
     height: 27px;
     max-width: 140px;
     margin-right: 24px;
@@ -37,8 +35,6 @@
       box-shadow: $primary-box-shadow;
 
       .header__location-wrapper {
-        cursor: pointer;
-
         display: flex;
         flex: 1;
         justify-content: space-between;
@@ -102,7 +98,6 @@
     }
 
     .header__profile-dropdown-icon {
-      cursor: pointer;
       font-size: 20px;
     }
   }
