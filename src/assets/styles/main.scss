@@ -4,9 +4,11 @@
 @import 'utils/variables';
 
 @import 'layouts/common';
-@import 'layouts/footer';
+
 @import 'layouts/header';
 @import 'layouts/tabOptions';
+@import 'layouts/filter';
+@import 'layouts/footer';
 
 @import 'components/delivery';
 @import 'components/diningOut';
