@@ -1,5 +1,12 @@
+import Filter from '../common/Filter';
+
 const DiningOut = () => {
-  return <div>This is the DiningOut</div>;
+  return (
+    <div className="max-width">
+      <Filter />
+      This is the DiningOut
+    </div>
+  );
 };
 
 export default DiningOut;

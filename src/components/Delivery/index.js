@@ -1,5 +1,12 @@
+import Filter from '../common/Filter';
+
 const Delivery = () => {
-  return <div>This is Delivery</div>;
+  return (
+    <div className="max-width">
+      <Filter />
+      This is Delivery
+    </div>
+  );
 };
 
 export default Delivery;
