@@ -21,9 +21,21 @@ const ExploreCard = ({ data }) => {
       <div className="expore-card__wrapper">
         <img src={coverImage} className="explore-card__image" alt={name} />
         <p className="explore-card__delivery-time">{deliveryTime}</p>
-        {proOffer && <p className="explore-card__pro-offer">{proOffer}</p>}
-        {goldOffer && <p className="explore-card__gold-offer">{goldOffer}</p>}
-        {discount && <p className="explore-card__discount">{discount}</p>}
+        {discount && (
+          <p className="explore-card__offer explore-card__offer--discount">
+            {discount}
+          </p>
+        )}
+        {proOffer && (
+          <p className="explore-card__offer explore-card__offer--pro">
+            {proOffer}
+          </p>
+        )}
+        {goldOffer && (
+          <p className="explore-card__offer explore-card__offer--gold">
+            {goldOffer}
+          </p>
+        )}
       </div>
     </div>
   );

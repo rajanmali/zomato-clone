@@ -37,12 +37,7 @@
       border-radius: 4px;
     }
 
-    .explore-card__pro-offer {
-      position: absolute;
-      left: 0px;
-      bottom: 40px;
-
-      background-color: $tag-red;
+    .explore-card__offer {
       color: $bg-primary;
 
       font-size: 14px;
@@ -57,9 +52,29 @@
       text-overflow: ellipsis;
       overflow: hidden;
     }
-    .explore-card__gold-offer {
+
+    .explore-card__offer--discount {
+      position: absolute;
+      left: 0px;
+      bottom: 14px;
+
+      background-color: $tag-blue;
     }
-    .explore-card__discount {
+
+    .explore-card__offer--pro {
+      position: absolute;
+      left: 0px;
+      bottom: 40px;
+
+      background-color: $tag-red;
+    }
+
+    .explore-card__offer--gold {
+      position: absolute;
+      left: 0px;
+      bottom: 14px;
+
+      background-color: $tag-red;
     }
   }
 }
