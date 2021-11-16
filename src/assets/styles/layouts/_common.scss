@@ -25,3 +25,9 @@
 
   margin-bottom: 32px;
 }
+
+// Overriding react-slick classes
+.slick-next:before,
+.slick-prev:before {
+  color: $zomato-gray-primary;
+}
