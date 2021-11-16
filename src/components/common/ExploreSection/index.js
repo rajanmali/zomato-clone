@@ -7,7 +7,7 @@ const ExploreSection = ({ list, collectionName }) => {
       <p className="collection-title">{collectionName}</p>
       <div className="explore-section__grid">
         {list.map((el) => (
-          <ExploreCard data={el} />
+          <ExploreCard data={el} key={el?.info?.resId} />
         ))}
       </div>
     </div>
