@@ -1,0 +1,25 @@
+.delivery-item__image-wrapper {
+  height: 190px;
+  width: 260px;
+
+  background-color: $bg-primary;
+  box-shadow: $secondary-box-shadow;
+  border-radius: 8px;
+
+  .delivery-item__image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 8px;
+  }
+}
+
+.delivery-item__title {
+  font-size: 20px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  margin-top: 6px;
+}
