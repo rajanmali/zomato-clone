@@ -1,19 +1,25 @@
 // Components
-import Filter from '../common/Filter';
 import Collections from '../../components/common/Collections';
+import Filter from '../common/Filter';
+import ExploreSection from '../common/ExploreSection';
 
 // Constants
-import { collectionList } from '../../constants/collectionList';
+import { diningOutCollectionList } from '../../constants/collectionList';
 import { diningOutFilters } from '../../constants';
+import { diningOutData } from '../../constants/diningOutData';
 
 const DiningOut = () => {
   return (
-    <div>
-      <Collections list={collectionList} />
+    <>
+      <Collections list={diningOutCollectionList} />
       <div className="max-width">
         <Filter filterList={diningOutFilters} />
       </div>
-    </div>
+      <ExploreSection
+        list={diningOutData}
+        collectionName="Dine-Out Restaurants in Bangalore"
+      />
+    </>
   );
 };
 

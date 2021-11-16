@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 
 // Constants
 import { settings } from '../../../constants/index';
-import { collectionList } from '../../../constants/collectionList';
 
 const Collection = ({ list }) => (
   <div className="collections__wrapper">
@@ -20,7 +19,7 @@ const Collection = ({ list }) => (
         </div>
       </div>
       <Slider {...settings}>
-        {collectionList.map((el) => (
+        {list.map((el) => (
           <>
             <div key={el.id} className="collections__image-wrapper">
               <img
