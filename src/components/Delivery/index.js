@@ -1,6 +1,7 @@
 // Components
 import Filter from '../common/Filter';
 import DeliveryCollections from './components/DeliveryCollections';
+import TopBrands from './components/TopBrands';
 
 // Constants
 import { deliveryFilters } from '../../constants';
@@ -12,6 +13,7 @@ const Delivery = () => {
         <Filter filterList={deliveryFilters} />
       </div>
       <DeliveryCollections />
+      <TopBrands />
     </>
   );
 };

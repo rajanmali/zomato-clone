@@ -1,1 +1,34 @@
+.top-brands {
+  padding-top: 30px;
 
+  .top-brands__image-time-wrapper {
+    display: flex !important;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    .top-brands__time {
+      margin-top: 12px;
+    }
+
+    .top-brands__image-wrapper {
+      height: 150px;
+      width: 150px;
+
+      border-radius: 10%;
+      border: 0.5px solid $border-white;
+
+      background-color: $bg-primary;
+      box-shadow: $secondary-box-shadow;
+
+      .top-brands__image {
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+
+        border-radius: inherit;
+      }
+    }
+  }
+}
