@@ -70,6 +70,51 @@ export const deliveryFilters = [
   },
 ];
 
+export const diningOutFilters = [
+  {
+    id: 'dining-out-filter-1',
+    icon: (
+      <i className="fi fi-rr-settings-slider'dining-out-filter-s' absolute-center"></i>
+    ),
+    title: 'Filters',
+  },
+  {
+    id: 'dining-out-filter-2',
+    title: 'Pro Offers',
+    icon: <i className="fi fi-rr-angle-down absolute-center"></i>,
+  },
+  {
+    id: 'dining-out-filter-3',
+    title: 'Distance',
+    icon: <i className="fi fi-rr-apps-sort absolute-center"></i>,
+  },
+  {
+    id: 'dining-out-filter-5',
+    title: 'Online Bookings',
+  },
+  {
+    id: 'dining-out-filter-4',
+    title: 'Outdoor Seating',
+  },
+  {
+    id: 'dining-out-filter-6',
+    title: 'Rating: 4.0+',
+  },
+  {
+    id: 'dining-out-filter-7',
+    title: 'Cuisines',
+    icon: <i className="fi fi-rr-angle-down absolute-center"></i>,
+  },
+  {
+    id: 'dining-out-filter-8',
+    title: 'Cafes',
+  },
+  {
+    id: 'dining-out-filter-9',
+    title: 'Open Now',
+  },
+];
+
 export const nightLifeFilters = [
   {
     id: 'night-life-filter-1',
