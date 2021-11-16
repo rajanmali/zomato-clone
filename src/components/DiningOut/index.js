@@ -1,11 +1,15 @@
 // Components
 import Filter from '../common/Filter';
+import Collections from '../../components/common/Collections';
+
+// Constants
+import { collectionList } from '../../constants/collectionList';
 
 const DiningOut = () => {
   return (
-    <div className="max-width">
+    <div>
+      <Collections list={collectionList} />
       <Filter />
-      This is the DiningOut
     </div>
   );
 };
