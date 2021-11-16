@@ -1,0 +1,65 @@
+.explore-card {
+  margin: 12px 0px 24px 0px;
+  padding: 10px;
+
+  border: 1px solid transparent;
+  border-radius: 15px;
+
+  .expore-card__wrapper {
+    height: 248px;
+    width: 328px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    .explore-card__image {
+      height: 100%;
+      width: 100%;
+
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .explore-card__delivery-time {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+
+      background-color: $bg-primary;
+      backdrop-filter: blur(4px);
+      opacity: 0.8;
+
+      font-weight: 600;
+      font-size: 12px;
+      padding: 2px 5px 3px;
+
+      border-radius: 4px;
+    }
+
+    .explore-card__pro-offer {
+      position: absolute;
+      left: 0px;
+      bottom: 40px;
+
+      background-color: $tag-red;
+      color: $bg-primary;
+
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      white-space: nowrap;
+
+      padding: 0px 6px;
+
+      border-radius: 0px 2px 2px 0px;
+
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .explore-card__gold-offer {
+    }
+    .explore-card__discount {
+    }
+  }
+}
