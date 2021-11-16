@@ -14,7 +14,7 @@ const DeliveryCollections = () => {
         <p className="collection-title">Eat what makes you happy</p>
         <Slider {...settings}>
           {deliveryItems.map((item) => (
-            <DeliveryItem item={item} />
+            <DeliveryItem item={item} key={item.id} />
           ))}
         </Slider>
       </div>

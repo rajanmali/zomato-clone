@@ -6,6 +6,7 @@ import TopBrands from './components/TopBrands';
 
 // Constants
 import { deliveryFilters } from '../../constants';
+import { restaurantData } from '../../constants/restaurantData';
 
 const Delivery = () => {
   return (
@@ -14,8 +15,11 @@ const Delivery = () => {
         <Filter filterList={deliveryFilters} />
       </div>
       <DeliveryCollections />
-      <ExploreSection />
       <TopBrands />
+      <ExploreSection
+        list={restaurantData}
+        collectionName="Delivery Restaurants in your area"
+      />
     </>
   );
 };

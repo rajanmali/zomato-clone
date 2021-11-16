@@ -13,7 +13,7 @@ const TopBrands = () => {
       <p className="collection-title">Top brands for you</p>
       <Slider {...settings}>
         {topBrandsList.map((brand) => (
-          <div className="top-brands__image-time-wrapper">
+          <div className="top-brands__image-time-wrapper" key={brand.id}>
             <div className="top-brands__image-wrapper">
               <img
                 src={brand.cover}
