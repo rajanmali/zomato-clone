@@ -1,3 +1,16 @@
+// Components
+import NextArrow from '../components/common/Carousel/components/NextArrow';
+import PrevArrow from '../components/common/Carousel/components/PrevArrow';
+
+export const settings = {
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+};
+
 export const navigationTab = [
   {
     id: 'navigation-tab-option-1',
