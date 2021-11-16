@@ -18,7 +18,7 @@ const ExploreCard = ({ data }) => {
 
   return (
     <div className="explore-card cur-po">
-      <div className="expore-card__wrapper">
+      <div className="expore-card__image-wrapper">
         <img src={coverImage} className="explore-card__image" alt={name} />
         <p className="explore-card__delivery-time">{deliveryTime}</p>
         {discount && (
@@ -37,6 +37,47 @@ const ExploreCard = ({ data }) => {
           </p>
         )}
       </div>
+      <div className="explore-card__details-wrapper">
+        <p className="expore-card__name">{name}</p>
+        {rating && (
+          <div className="expore-card__rating absolute-center">
+            {rating} <i className="fi fi-rr-star absolute-center" />
+          </div>
+        )}
+      </div>
+      <div className="explore-card__details-wrapper">
+        {cuisines.length && (
+          <div className="explore-card__cuisines">
+            {cuisines.map((el, index) => (
+              <span
+                className="explore-card__cuisine-tag"
+                key={`cuisine-el-${index}`}
+              >
+                {el}
+                {index !== cuisines.length - 1 && ', '}
+              </span>
+            ))}
+          </div>
+        )}
+        {approxPrice && (
+          <span className="explore-card__approx-price">{approxPrice}</span>
+        )}
+      </div>
+      {bottomContainers.length > 0 && (
+        <div>
+          <div className="explore-card__separator" />
+          <div className="explore-card__bottom-image-text-wrapper">
+            <img
+              src={bottomContainers[0]?.image?.url}
+              alt={bottomContainers[0].text}
+              style={{ height: '18px' }}
+            />
+            <p className="explore-card__bottom-text">
+              {bottomContainers[0].text}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
