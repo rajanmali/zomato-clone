@@ -1,3 +1,3 @@
-const Footer = () => <div>This is the Footer</div>;
+const Footer = () => <div className="max-width">This is the Footer</div>;
 
 export default Footer;
